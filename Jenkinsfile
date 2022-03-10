@@ -16,7 +16,7 @@ pipeline {
             }
         }    
 
-        stage('Lint Test Execution') {
+        stage('Lint Tests Execution') {
             steps {
                 bat "ng lint"
             }
