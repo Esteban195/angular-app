@@ -4,7 +4,7 @@ pipeline {
     }
 
     stages {
-        stage('Angulara Verification') {
+        stage('Angular Verification') {
             steps {
                 bat "ng version"
             }
