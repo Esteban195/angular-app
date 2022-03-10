@@ -4,7 +4,7 @@ pipeline {
     }
 
     stages {
-        stage('Angulara Verification') {
+        stage('Angular Verification') {
             steps {
                 bat "ng version"
             }
@@ -22,7 +22,7 @@ pipeline {
             }
         }
 
-        stage('Unit Test Execution') {
+        stage('Unit Tests Execution') {
             steps {
                 bat "ng test"
             }
@@ -38,7 +38,7 @@ pipeline {
                 branch 'dev'
             }
             steps {
-                bat "xcopy dist\\clase6 C:\inetpub\wwwroot\edgar\dev  /s /y"
+                bat "xcopy dist\\clase6 C:\\inetpub\\wwwroot\\edgar\\dev  /s /y"
             }
         }
     }
