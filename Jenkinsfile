@@ -35,17 +35,10 @@ pipeline {
         }
         stage('Deploy Aplication'){
             when {
-<<<<<<< HEAD
                 branch 'dev'
             }
             steps {
                 bat "xcopy dist\\clase6 C:\inetpub\wwwroot\edgar\dev  /s /y"
-=======
-                branch 'prod'
-            }
-            steps {
-                bat "xcopy dist\\clase6 C:\inetpub\wwwroot\edgar\prod /s /y"
->>>>>>> e651f1458adbe222105a363316b5d99e674af98a
             }
         }
     }
