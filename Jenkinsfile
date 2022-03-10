@@ -24,13 +24,13 @@ pipeline {
 
         stage('Unit Test Execution') {
             steps {
-                bat "ng Test"
+                bat "ng test"
             }
         } 
 
         stage('Build Execution') {
             steps {
-                bat "ng Build"
+                bat "ng build"
             }
         }
         stage('Deploy Aplication'){
