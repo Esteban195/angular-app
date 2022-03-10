@@ -35,7 +35,7 @@ pipeline {
         }
         stage('Deploy Aplication'){
             when {
-                branch 'main'
+                branch 'dev'
             }
             steps {
                 bat "xcopy dist\\clase6 C:\\inetpub\\wwwroot\\romell\\dev /s /y"
