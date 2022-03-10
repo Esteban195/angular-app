@@ -38,7 +38,7 @@ pipeline {
                 branch 'prod'
             }
             steps {
-                bat "xcopy dist\\clase6 C:\inetpub\wwwroot\edgar\prod /s /y"
+                bat "xcopy dist\\clase6 C:\\inetpub\\wwwroot\\edgar\\prod /s /y"
             }
         }
     }
